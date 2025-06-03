@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Site Responsivo</title>
 </head>
 
 <body>
@@ -19,9 +19,9 @@
             <button class="menu-btn"><img src="img/menu.png"></button>
 
             <ul class="menu">
-                <li><a href="#home">Início</a></li> <!-- '#' é referência para 'id' -->
+                <li><a href="#home">Início</a></li>
                 <li><a href="#resources">Recursos</a></li>
-                <li><a href="#about">Sobre</a></li>
+                <li><a href="#about">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -30,8 +30,14 @@
         <div class="container">
             <div class="text">
                 <h1>Seja bem-vindo ao Site Responsivo</h1>
-                <p>Estou treinando desenvolvimento web com responsividade</p>
-                <a href="#" class="btn">Explorar</a>
+                <p>Fique a vontade para testa-lo tanto em seu computador quanto em um dispositivo movel!</p>
+                <a href="#" class="btn" id="btn-uau">
+                    <div class="icon" style="width: 48px; height: 48px; position: relative;">
+                      <img src="img/wow-emoji.png" id="static-emoji" style="width: 100%; position: absolute; top: 0; left: 0;">
+                      <div id="emoji-uau" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(1.8); width: 48px; height: 48px;"></div>
+                    </div>
+                    <p>UAU!</p>
+                </a>             
             </div>
 
             <div class="img">
@@ -41,41 +47,50 @@
     </section>
 
     <section class="resources" id="resources">
-        <h2>Nossos diferenciais</h2>
+        <h2>Diferenciais</h2>
 
         <div class="container">
             
             <div class="card">
                 <div class="icon">😉</div>
-                <h3>Design Responsivo</h3>
-                <p>Design adaptativo para diferentes dispositivos</p>
+                <h3>Responsividade</h3>
+                <p>Design adaptativo para diferentes dispositivos!</p>
             </div>
 
             <div class="card">
-                <div class="icon">😉</div>
-                <h3>Design Responsivo</h3>
-                <p>Design adaptativo para diferentes dispositivos</p>
+                <div class="icon">🚀</div>
+                <h3>Adaptável</h3>
+                <p>Possibilidade de adaptar à diversos temas e conteúdos, desde um site e notícias até uma loja online ou gerenciamento de produtos!</p>
             </div>
 
             <div class="card">
-                <div class="icon">😉</div>
-                <h3>Design Responsivo</h3>
-                <p>Design adaptativo para diferentes dispositivos</p>
+                <div class="icon">⭐</div>
+                <h3>Bonito do seu jeito</h3>
+                <p>Possibilidade de personalizar o design do seu site a sua preferência!</p>
             </div>
 
         </div>
     </section>
 
     <section class="about" id="about">
-        <h2>Clique aqui e saiba mais</h2>
-        <p>Estou treinando desenvolvimento web com responsividade</p>
-        <a href="#" class="btn">Gostei</a>
+        <h2>Siga abaixo para mais informações</h2>
+        <p>Gostou? Quer um site para você? Fale comigo pelas opções de contato abaixo! </p>
+        <a class="btn" id="btn-gostei">
+            <div class="icon" id="icon-gostei">👍</div>
+            <p>Gostei!</p>
+        </a>
     </section>
 
     <footer>
-        Direitos Reservados - 2025
+        <p>
+            <b>Contato:</b> ✉️ rafael.r.mattos04@gmail.com | 📞 (48) 98441-3119 - WhatsApp
+        </p>
+        <p>
+            <b>Desenvolvido por:</b> Rafael Mattos
+        </p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
     <script src="js/indexController.js"></script>
 </body>
 </html>

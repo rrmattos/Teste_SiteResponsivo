@@ -23,17 +23,45 @@ a {
 .container {
     width: 90%;
     max-width: 1100px;
-    margin: 0 auto; /* o primeiro valor de margin correponde a cima e esquerda e o segundo valor a baixo e direita */
+    margin: 0 auto;
     padding: 20px 0;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 10px;
+    max-width: 150px;
     background-color: #4CAF50;
     color: #fff;
     border-radius: 4px;
     margin-top: 30px;
+    text-decoration: none;
+}
+
+.btn .icon {
+    font-size: 2rem;
+    margin-bottom: 0px;
+}
+
+.btn p {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.btn:active {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+#emoji-uau {
+    z-index: 0;
+  }
+  
+#static-emoji {
+z-index: 1;
 }
 
 .header {
@@ -142,6 +170,18 @@ footer {
     cursor: pointer;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
 @media screen and (max-width: 768px) {
     .home .container{
         flex-direction: column;
@@ -179,4 +219,11 @@ footer {
         max-height: 200px;
         padding: 10px 0 10px 20px;
     }
+}
+
+.hand-clone {
+    position: absolute;
+    font-size: 2rem;
+    pointer-events: none;
+    z-index: 999;
 }
